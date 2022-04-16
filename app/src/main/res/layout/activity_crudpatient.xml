@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CRUDPatientActivity">
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameLabel"
+        />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_age"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameEdit"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/ageEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ageLabel"
+        />
+
+    <TextView
+        android:id="@+id/diseaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_disease"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ageEdit"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/diseaseEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/diseaseLabel"
+        />
+
+    <TextView
+        android:id="@+id/billLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_bill"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/diseaseEdit"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/billEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/billLabel"
+        />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billEdit"
+        android:text="@string/add"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billEdit"
+        android:text="@string/update"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billEdit"
+        android:text="@string/delete"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        />
+
+</RelativeLayout>

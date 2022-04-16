@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238653607123",
+    "project_id": "comp304lab5-ef355",
+    "storage_bucket": "comp304lab5-ef355.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238653607123:android:062ef24a7f6a795ca55826",
+        "android_client_info": {
+          "package_name": "com.example.stazgrady_comp304sec002_lab5_group7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238653607123-a1pcsnvj91k4ui40lht58oeqfkn558fa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbyqipA0jZuhGFuX86TFbFr3k-2HeDho8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238653607123-a1pcsnvj91k4ui40lht58oeqfkn558fa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
