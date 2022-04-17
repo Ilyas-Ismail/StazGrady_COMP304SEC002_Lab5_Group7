@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StazGrady_COMP304SEC002_Lab5_Group7">
         <activity
+            android:name=".PatientListActivity"
+            android:exported="false" />
+        <activity
             android:name=".CRUDPatientActivity"
             android:exported="false" />
         <activity

@@ -3,6 +3,7 @@ package com.example.stazgrady_comp304sec002_lab5_group7;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -42,6 +43,7 @@ public class CRUDPatientActivity extends AppCompatActivity {
         Button updateBtn = findViewById(R.id.updateBtn);
         Button deleteBtn = findViewById(R.id.deleteBtn);
         Button readBtn = findViewById(R.id.readBtn);
+        Button infoBtn = findViewById(R.id.infoBtn);
 
         PatientDAO dao = new PatientDAO();
 
@@ -153,6 +155,14 @@ public class CRUDPatientActivity extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        infoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CRUDPatientActivity.this, PatientListActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -116,11 +116,22 @@
 
     <Button
         android:id="@+id/readBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/updateBtn"
-        android:layout_centerHorizontal="true"
-        android:text="Read"
+        android:text="@string/read"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateBtn"
+        android:text="@string/info"
+        android:layout_marginStart="155dp"
+        android:layout_alignParentLeft="true"
         />
 
 </RelativeLayout>
