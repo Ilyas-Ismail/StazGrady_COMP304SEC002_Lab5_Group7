@@ -35,9 +35,9 @@
         android:id="@+id/ageEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/ageLabel"
-        />
+        android:inputType="number"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/diseaseLabel"
@@ -69,8 +69,17 @@
         android:id="@+id/billEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/billLabel"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billEdit"
+        android:text="@string/instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         />
 
     <Button
@@ -103,6 +112,15 @@
         android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="25dp"
+        />
+
+    <Button
+        android:id="@+id/readBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Read"
         />
 
 </RelativeLayout>

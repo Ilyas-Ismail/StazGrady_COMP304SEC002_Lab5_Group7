@@ -8,5 +8,11 @@
     <string name="delete">Delete</string>
     <string name="update">Update</string>
     <string name="login">Login</string>
-    <string name="success">Record Successfully Added!</string>
+    <string name="successAdd">Record Successfully Added!</string>
+    <string name="successDelete">Record Successfully Deleted!</string>
+    <string name="successUpdate">Record Successfully Updated!</string>
+    <string name="none">There Is No Record With That Name!</string>
+    <string name="failure">Record Could Not Be Added or Updated!</string>
+    <string name="emptyFields">Please Fill All The Fields!</string>
+    <string name="instructions">All Operations Are Performed Using The Patient Name.</string>
 </resources>
