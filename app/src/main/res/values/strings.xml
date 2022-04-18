@@ -17,4 +17,9 @@
     <string name="failure">Record Could Not Be Added or Updated!</string>
     <string name="emptyFields">Please Fill All The Fields!</string>
     <string name="instructions">All Operations Are Performed Using The Patient Name.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="mainPage">Return to Main Page</string>
+    <string name="logout">Logout</string>
 </resources>

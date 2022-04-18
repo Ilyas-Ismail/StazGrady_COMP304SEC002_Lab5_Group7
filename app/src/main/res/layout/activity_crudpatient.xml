@@ -10,128 +10,124 @@
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/patient_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:text="@string/patient_name" />
 
     <EditText
         android:id="@+id/nameEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/nameLabel"
-        />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/ageLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/patient_age"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/nameEdit"
-        android:layout_marginTop="50dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/patient_age" />
 
     <EditText
         android:id="@+id/ageEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/ageLabel"
-        android:inputType="number"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/diseaseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/patient_disease"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/ageEdit"
-        android:layout_marginTop="50dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/patient_disease" />
 
     <EditText
         android:id="@+id/diseaseEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/diseaseLabel"
-        />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/billLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/patient_bill"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/diseaseEdit"
-        android:layout_marginTop="50dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/patient_bill" />
 
     <EditText
         android:id="@+id/billEdit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/billLabel"
-        android:inputType="numberDecimal"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal" />
 
     <TextView
+        android:id="@+id/instructionsTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/billEdit"
-        android:text="@string/instructions"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        />
+        android:text="@string/instructions" />
 
     <Button
         android:id="@+id/addBtn"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/billEdit"
         android:text="@string/add"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_alignParentLeft="true"
-        />
+        android:layout_below="@id/instructionsTV"/>
 
     <Button
         android:id="@+id/updateBtn"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/billEdit"
         android:text="@string/update"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_below="@id/instructionsTV"
+        android:layout_toEndOf="@id/addBtn"
+        android:layout_marginLeft="5dp"/>
 
     <Button
         android:id="@+id/deleteBtn"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/billEdit"
         android:text="@string/delete"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="25dp"
-        />
+        android:layout_below="@id/instructionsTV"
+        android:layout_toEndOf="@id/updateBtn"
+        android:layout_marginLeft="5dp" />
 
     <Button
         android:id="@+id/readBtn"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/updateBtn"
         android:text="@string/read"
-        android:layout_marginStart="25dp"
-        android:layout_alignParentLeft="true"
-        />
+        android:layout_below="@id/instructionsTV"
+        android:layout_toEndOf="@id/deleteBtn"
+        android:layout_marginLeft="5dp"  />
 
     <Button
         android:id="@+id/infoBtn"
-        android:layout_width="185dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/updateBtn"
         android:text="@string/info"
-        android:layout_marginStart="155dp"
-        android:layout_alignParentLeft="true"
-        />
+        android:layout_below="@id/addBtn"/>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_below="@id/addBtn"
+        android:layout_toEndOf="@id/infoBtn"
+        android:layout_marginLeft="5dp" />
 
 </RelativeLayout>

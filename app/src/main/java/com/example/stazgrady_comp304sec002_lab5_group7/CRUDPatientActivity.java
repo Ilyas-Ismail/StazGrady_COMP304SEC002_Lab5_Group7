@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +26,7 @@ import java.util.Locale;
 public class CRUDPatientActivity extends AppCompatActivity {
 
     private DatabaseReference dbReference;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class CRUDPatientActivity extends AppCompatActivity {
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         dbReference = db.getReference(Patient.class.getSimpleName());
+        mAuth = FirebaseAuth.getInstance();
 
         EditText nameEdit = findViewById(R.id.nameEdit);
         EditText ageEdit = findViewById(R.id.ageEdit);
@@ -44,6 +47,7 @@ public class CRUDPatientActivity extends AppCompatActivity {
         Button deleteBtn = findViewById(R.id.deleteBtn);
         Button readBtn = findViewById(R.id.readBtn);
         Button infoBtn = findViewById(R.id.infoBtn);
+        Button logoutBtn = findViewById(R.id.logoutBtn);
 
         PatientDAO dao = new PatientDAO();
 
@@ -164,6 +168,11 @@ public class CRUDPatientActivity extends AppCompatActivity {
                 Intent intent = new Intent(CRUDPatientActivity.this, PatientListActivity.class);
                 startActivity(intent);
             }
+        });
+
+        logoutBtn.setOnClickListener(view ->{
+            mAuth.signOut();
+            startActivity(new Intent(CRUDPatientActivity.this, MainActivity.class));
         });
     }
 }
